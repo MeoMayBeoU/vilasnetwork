@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Đăng nhập</title>
+	<!-- <base href="{{asset('')}}"> -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<link rel="shortcut icon" id="favicon" href="images/favicon.png">
+
+	<link rel="stylesheet" type="text/css" href="fonts/fontawesome/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style_login.css">
+	<link rel="stylesheet" type="text/css" href="css/notify.css">
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css">
+</head>
+<body>
+	<style>
+		.group_login{
+			display: none;
+		}
+	</style>
+	<section>
+		<div class="col-12 col-lg-6 group_img">
+			<div class="row">
+				<img class="img-responsive background" src="images/login.png" alt="Logo">
+				<div class="messenger">
+					<a class="click_more">
+						<img class="img-responsive" src="images/messenger.png" alt="Logo">
+					</a>
+				</div>
+				<div class="gr_content hidden">
+					<img class="img-responsive img_login" src="images/logo-login.png" alt="Logo">
+					<p>
+						NHẬN NGAY 500,000 ĐỒNG KHI TRỞ THÀNH THÀNH VIÊN CỦA VILAS NETWORK<br><br>
+						Bạn đang tìm kiếm những khóa học trực tuyến để cải thiện trình độ chuyên môn?<br>
+						Bạn đang mong muốn học tập những xu hướng mới của thị trường?<br>
+						Bạn đang tìm hiểu cách gia tăng thu nhập với việc làm thêm?<br>
+						Với Vilas Network, bạn sẽ có cơ hội phát triển và gia tăng thu nhập trong nhiều lĩnh vực như <br>
+						✅ MMO - Kiếm tiền online - việc bạn kiếm được tiền từ các công việc trên Internet thông qua việc sử dụng máy tính/ điện thoại (phần lớn là máy tính) hoặc các thiết bị có kết nối mạng Internet<br>
+						✅ Facebook, Youtube, Google Ads và Tiktok - những nền tảng hot nhất hiện nay Vilas Network đã và đang xây dựng cộng đồng chia sẻ những giá trị không giới hạn. <br>
+						👍 Kiếm tiền nhanh chóng, dễ dàng và cực kỳ uy tín<br>
+						👍 Kết nối các đối tác uy tín trong và ngoài nước <br>
+						👍 Được vận hành bởi Vilas Vietnam - thương hiệu với hơn 50 dự án trải dài từ Bắc chí Nam<br>
+						👍 Sở hữu đội ngũ nhà tư vấn, chuyên gia với thành tựu nổi bật trong ngành nghề<br>
+					</p>
+					<div class="gr_click_move">
+						<a class="btn click_move">Kiếm Tiền Ngay <i class="fas fa-arrow-right"></i></a>
+					</div>
+					<svg version="1.1" x="0px" y="0px" viewBox="5 0 400 280" xml:space="preserve" class="injected-svg svg_img theme-color">
+						<path d="M53.1,266.7C19.3,178-41,79.1,41.6,50.1S287.7-59.6,293.8,77.5c6.1,137.1,137.8,38,15.6,288.9 S86.8,355.4,53.1,266.7z"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-lg-6 group_content">
+			<div class="row">
+				<div class="gr_content">
+					<form method="post" id="SubmitForm" action="javascript:void(0);">
+						<div class="col-12 col-sm-8 col-md-7 col-lg-7 sub_content">
+							<a href="index.html">
+								<img class="img-responsive" src="images/logo-login.png" alt="Logo">
+							</a>
+							<h2 class="title">Tham gia cùng hơn 25 triệu thành viên từ khắp nơi trên thế giới</h2>
+							<p class="info">Tận dụng thời gian rảnh rỗi để kiếm thêm thu nhập cùng Vilas Network hoặc tiết kiệm tiền mua sắm mỗi ngày.</p>
+							<div class="row">
+								<div class="form-group col-12 group_registration">
+									<i class="icon_input fas fa-user-tie"></i><input type="text" id="name" name="name" class="form-control text_login" placeholder="Họ và tên (*)">
+								</div>
+								<div class="form-group col-12 ">
+									<i class="icon_input far fa-envelope"></i><input type="text" id="email" name="email" class="form-control text_login text_select" placeholder="Email đăng nhập (*)">
+								</div>
+								<div class="form-group col-12 group_registration">
+									<i class="icon_input fas fa-phone-alt"></i><input type="text" id="phone" name="phone" class="form-control text_login" placeholder="Số điện thoại (*)">
+								</div>
+								<div class="form-group col-12 ">
+									<i class="icon_input fas fas fa-key"></i><input type="password" id="password" name="password" class="form-control text_login" placeholder="Mật khẩu (*)">
+								</div>
+								<div class="form-group col-12 group_registration">
+									<i class="icon_input fas fas fa-key"></i><input type="password" id="password" name="password" class="form-control text_login" placeholder="Nhập lại mật khẩu (*)">
+								</div>
+								<div class="form-group col-12 group_registration">
+									<label class="check_text">
+										<span class="text">Tôi đồng ý với tất cả <a class="btn_rules">điều khoản của Vilas Network</a></span>
+										<input type="checkbox" class="check_input" value="1">
+										<span class="check_span"></span>
+									</label>
+								</div>
+								<div class="form-group col-12">
+									<input type="text" value="registration" hidden="" id="button_action">
+									<button type="submit" class="group_registration">Đăng ký</button>
+									<button type="submit" class="group_login">Đăng nhập</button>
+								</div>
+								<div class="form-group col-12">
+									<p class="change_login group_registration">Bạn đã là thành viên? <a class="btn_login" style="cursor: pointer;">Đăng nhập</a></p>
+									<p class="change_login group_login">Bạn chưa có tài khoản? <a class="btn_registration" style="cursor: pointer;">Đăng ký</a></p>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</section>
+	<div class="modal fade" id="PopRules" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Điều khoản của Vilas Network</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Đóng">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="info">Nội dung</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i> Đóng</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<span href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></span>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main_login.js"></script>
+	<script type="text/javascript" src="fonts/fontawesome/js/all.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/notify.js"></script>
+	<script type="text/javascript" src="js/select2.min.js"></script>
+	<script type="text/javascript" src="js/sweetalert.min.js"></script>
+	<script type="text/javascript">
+		$(document).on('click', '.btn_rules', function(e){
+			$('#PopRules').modal("show");
+		});
+	</script>
+</body>
+</html>

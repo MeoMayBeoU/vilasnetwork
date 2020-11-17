@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Tài khoản</title>
+	<!-- <base href="{{asset('')}}"> -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<link rel="shortcut icon" id="favicon" href="images/favicon.png">
+
+	<link rel="stylesheet" type="text/css" href="fonts/fontawesome/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style_accounts.css">
+	<link rel="stylesheet" type="text/css" href="css/notify.css">
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css">
+</head>
+<body>
+	<section>
+		<div id="particles-accounts"></div>
+		<div id="group_content">
+			<div class="container">
+				<div class="col-12 gr_content">
+					<div class="row">
+						<h2 class="title">Welcome</h2>
+						<p class="info">Chúc Mừng Bạn Đã Trở Thành Đối Tác Của VILAS NETWORK</p>
+						<div class="content">
+							<p>Vui Lòng Hoàn Tất Biểu Mẫu Bên Dưới Để Nhận Tiền Thưởng: 500.000 VNĐ</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="gr_input">
+					<form method="post" id="SubmitForm" action="javascript:void(0);">
+						<div class="col-12 col-sm-12 col-md-10 col-lg-7 sub_content">
+							<p class="info">Tận dụng thời gian rảnh rỗi để kiếm thêm thu nhập cùng Vilas Network hoặc tiết kiệm tiền mua sắm mỗi ngày.</p>
+							<div class="row">
+								<div class="form-group col-12 ">
+									<i class="icon_input fas fa-user-tie"></i><input type="text" id="name" name="name" class="form-control" placeholder="Họ và tên (*)">
+								</div>
+								<div class="form-group col-12 ">
+									<i class="icon_input far fa-address-card"></i><input type="text" id="cmnd" name="cmnd" class="form-control" placeholder="Số CMND (*)">
+								</div>
+								<div class="form-group col-12 ">
+									<i class="icon_input far fa-envelope"></i><input type="text" id="email" name="email" class="form-control" placeholder="Email liên hệ (*)">
+								</div>
+								<div class="form-group col-12 ">
+									<i class="icon_input fas fa-phone-alt"></i><input type="text" id="phone" name="phone" class="form-control" placeholder="Số điện thoại (*)">
+								</div>
+								<div class="form-group col-12 ">
+									<i class="icon_input fas fa-street-view"></i><input type="text" id="address" name="address" class="form-control" placeholder="Địa chỉ (*)">
+								</div>
+								<div class="form-group col-12 ">
+									<i class="icon_input fas fa-user-tie"></i><input type="text" id="bank" name="bank" class="form-control" placeholder="Tên ngân hàng (*)">
+								</div>
+								<div class="form-group col-12 ">
+									<i class="icon_input far fa-credit-card"></i><input type="text" id="number_bank" name="number_bank" class="form-control" placeholder="Số tài khoản (*)">
+								</div>
+								<div class="form-group col-12 ">
+									<i class="icon_input fas fa-user"></i><input type="text" id="user_bank" name="user_bank" class="form-control" placeholder="Tên chủ thẻ (*)">
+								</div>
+								<div class="form-group col-12 ">
+									<i class="icon_input fas fa-mobile"></i><input type="text" id="phone_presenter" name="phone_presenter" class="form-control" placeholder="Số điện thoại giới thiệu">
+								</div>
+								<div class="form-group col-12 ">
+									<label>Giới tính: </label>
+									<input id="nam" type="radio" name="gender" value="Nam" checked>
+									<label for="nam"><span></span>Nam</label>
+									
+									<input id="nu" type="radio" name="gender" value="Nữ">
+									<label for="nu"><span></span>Nữ</label>
+									
+									<input id="khac" type="radio" name="gender" value="Khác">
+									<label for="khac"><span></span>Khác</label>
+								</div>
+								<div class="form-group col-12 col-md-4 input_img">
+									<div class="sub_img">
+										<input type="file" name="picture_cmnd_front" id="picture_cmnd_front" hidden="" />
+										<a title="Click vào để thay đổi ảnh" id="load_picture_cmnd_front">
+											<img id="img_picture_cmnd_front" width ="100%" src="images/no-images.png">
+											<i class="i_info">CMND mặt trước</i>
+										</a>
+									</div>
+								</div>
+								<div class="form-group col-12 col-md-4 input_img">
+									<div class="sub_img">
+										<input type="file" name="picture_cmnd_backside" id="picture_cmnd_backside" hidden="" />
+										<a title="Click vào để thay đổi ảnh" id="load_picture_cmnd_backside">
+											<img id="img_picture_cmnd_backside" width ="100%" src="images/no-images.png">
+											<i class="i_info">CMND mặt sau</i>
+										</a>
+									</div>
+								</div>
+								<div class="form-group col-12 col-md-4 input_img">
+									<div class="sub_img">
+										<input type="file" name="picture_license" id="picture_license" hidden="" />
+										<a title="Click vào để thay đổi ảnh" id="load_picture_license">
+											<img id="img_picture_license" width ="100%" src="images/no-images.png">
+											<i class="i_info">Bằng lái xe</i>
+										</a>
+									</div>
+								</div>
+								<div class="form-group col-12">
+									<h3 class="warrning_title">Chú ý:</h3>
+									<p class="warrning_info"> 
+										- Yêu cầu tất cả thành viên nhập đăng đầy đủ thông tin chính chủ của bản thân và ảnh chụp rõ nét để đội ngũ chúng tôi xác thực nhanh chóng và giải thưởng ngay lập tức được gửi đến tài khoản ngân hàng của bạn.<br>
+										- Vui lòng đọc kĩ các điều khoản của bạn đã đồng ý với VILAS NETWORK để quá trình xác minh được thuận lợi</p>
+								</div>
+								<div class="form-group col-12 text-center">
+									<button type="submit" class="">Gửi ngay</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</section>
+	<span href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></span>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main_accounts.js"></script>
+	<script type="text/javascript" src="fonts/fontawesome/js/all.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/notify.js"></script>
+	<script type="text/javascript" src="js/select2.min.js"></script>
+	<script type="text/javascript" src="js/sweetalert.min.js"></script>
+
+	<script type="text/javascript" src="particles/js/particles.js"></script>
+	<script type="text/javascript" src="particles/js/lib/stats.js"></script>
+	<script type="text/javascript" src="particles/js/app-accounts.js"></script>
+
+	<script type="text/javascript">
+		//change img
+		$(document).on('change', '#picture_cmnd_front', function(){
+			if (!window.url_picture) {
+				window.url_picture = $('#img_picture_cmnd_front').attr('src');
+			}
+			var val = $(this).val();
+			if (val) {
+				switch(val.substring(val.lastIndexOf('.') + 1).toLowerCase()){
+					case 'gif': case 'jpg': case 'png':
+					if (this.files[0].size > 2000000) {
+						swal("Kích thước hình ảnh quá lớn", {
+							icon: "error",
+						});
+						break;
+					}
+					readURLImg1(this);
+					break;
+
+					default:
+					$(this).val('');
+					swal("Định dạng hình ảnh không đúng", {
+						icon: "error",
+					});
+					break;
+				}
+			}
+			else{
+				$('#img_picture_cmnd_front').attr('src', window.url_picture);
+			}
+		})
+		function readURLImg1(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					$('#img_picture_cmnd_front').attr('src', e.target.result);
+				}
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
+		$(document).on('click', '#load_picture_cmnd_front', function(){
+			$('#picture_cmnd_front').trigger('click');
+		});
+
+		
+		//change img
+		$(document).on('change', '#picture_cmnd_backside', function(){
+			if (!window.url_picture) {
+				window.url_picture = $('#img_picture_cmnd_backside').attr('src');
+			}
+			var val = $(this).val();
+			if (val) {
+				switch(val.substring(val.lastIndexOf('.') + 1).toLowerCase()){
+					case 'gif': case 'jpg': case 'png':
+					if (this.files[0].size > 2000000) {
+						swal("Kích thước hình ảnh quá lớn", {
+							icon: "error",
+						});
+						break;
+					}
+					readURLImg1(this);
+					break;
+
+					default:
+					$(this).val('');
+					swal("Định dạng hình ảnh không đúng", {
+						icon: "error",
+					});
+					break;
+				}
+			}
+			else{
+				$('#img_picture_cmnd_backside').attr('src', window.url_picture);
+			}
+		})
+		function readURLImg2(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					$('#img_picture_cmnd_backside').attr('src', e.target.result);
+				}
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
+		$(document).on('click', '#load_picture_cmnd_backside', function(){
+			$('#picture_cmnd_backside').trigger('click');
+		});
+
+
+		//change img
+		$(document).on('change', '#picture_license', function(){
+			if (!window.url_picture) {
+				window.url_picture = $('#img_picture_license').attr('src');
+			}
+			var val = $(this).val();
+			if (val) {
+				switch(val.substring(val.lastIndexOf('.') + 1).toLowerCase()){
+					case 'gif': case 'jpg': case 'png':
+					if (this.files[0].size > 2000000) {
+						swal("Kích thước hình ảnh quá lớn", {
+							icon: "error",
+						});
+						break;
+					}
+					readURLImg1(this);
+					break;
+
+					default:
+					$(this).val('');
+					swal("Định dạng hình ảnh không đúng", {
+						icon: "error",
+					});
+					break;
+				}
+			}
+			else{
+				$('#img_picture_license').attr('src', window.url_picture);
+			}
+		})
+		function readURLImg3(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					$('#img_picture_license').attr('src', e.target.result);
+				}
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
+		$(document).on('click', '#load_picture_license', function(){
+			$('#picture_license').trigger('click');
+		});
+
+	</script>
+</body>
+</html>
